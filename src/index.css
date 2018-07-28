@@ -1,0 +1,197 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #FBFEFF;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.title {
+  color: #B42051;
+  font-size: 20px;
+  margin-top: 70px;
+  margin-bottom: 72px;
+}
+
+.subtitle {
+  color: #CE3F71;
+  font-size: 20px;
+}
+
+.hint {
+  color: #A0A0A0;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.text {
+  color: #A0A0A0;
+}
+
+.actions {
+  display: flex;
+  align-items: baseline;
+}
+
+.button-next {
+  background: linear-gradient(to right, rgba(206,63,113, 0.7), #CE3F71);
+  width: 300px;
+  height: 42px;
+  margin-top: 72px;
+  border: none;
+  border-radius: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.button-back {
+  color: #03a9f4;
+  border: none;
+  margin-left: 24px;
+}
+
+.input, .input--full {
+  margin-top: 48px;
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-bottom: solid 1px #A0A0A0;
+  color: #A0A0A0;
+  padding-left: 8px;
+  display: block;
+  background-color: #FBFEFF;
+  border-radius: 0;
+}
+
+.input--full {
+  width: 100%;
+}
+
+.input:focus, .select:focus, .input--full {
+  outline: none;
+}
+
+.select {
+  width: 300px;
+  height: 30px;
+  border: none;
+  margin-top: 48px;
+  border-bottom: solid 1px #A0A0A0;
+  background-color: #FBFEFF;
+  color: #A0A0A0;
+}
+
+.progress {
+  width: 100%;
+  position: fixed;
+  border-radius: 0;
+  bottom: 0;
+  background: #F0F0F0;
+}
+
+.progress-bar {
+  background: #B7C65F;
+}
+
+.card {
+  width: 345px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(66, 66, 66, 0.2);
+}
+
+.card-title {
+  color: #ce3f71;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-next {
+  color: #fff;
+  background-color: #ce3f71;
+  border-radius: 20px;
+  border: none;
+  padding: 4px 18px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.card-dismiss {
+  text-transform: uppercase;
+  background: #fff;
+  border: none;
+  color: #505050;
+}
+
+.label {
+  font-weight: bold;
+  margin-top: 48px;
+  color: #505050;
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 100px;
+  display: block;
+  margin: 80px auto 50px auto;
+}
+
+.card-description {
+  color: #A0A0A0;
+  font-size: 14px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.padding-container {
+  padding-bottom: 0;
+}
+
+@media(max-width: 768px) {
+  .title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .input, .select, .input-full {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .label {
+    margin-top: 40px;
+  }
+
+  .actions {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .button-back {
+    background-color: #FBFEFF;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .padding-container {
+    padding-bottom: 3em;
+  }
+
+  .progress {
+    position: fixed;
+  }
+
+  .name {
+    display: block;
+  }
+}
